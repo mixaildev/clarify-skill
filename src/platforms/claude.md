@@ -6,14 +6,14 @@ description: Assess a task (marketing, ads, content, SEO, e-commerce, strategy o
 # Clarify — choice-only task interview → brief
 
 Task to clarify: $ARGUMENTS
-If empty, ask with ONE AskUserQuestion what kind of task it is (Маркетинг/реклама · Съдържание/SEO · Продукт/е-комерс/стратегия · Друго) and then let the user describe it via "Other" — this is the only place a free-text answer is expected.
+If empty, ask with ONE AskUserQuestion what kind of task it is (Marketing/ads · Content/SEO · Product/e-commerce/strategy · Other) and then let the user describe it via "Other" — this is the only place a free-text answer is expected.
 
 ## How to ask (Claude Code)
 
 - **Every question goes through the `AskUserQuestion` tool.** Never write questions or options as plain text.
 - 1–4 questions per call (group related ones, typically 2–4), 2–4 options each, `header` ≤ 12 characters.
 - Option `label` short (1–5 words); put the nuance/trade-off in `description`.
-- Recommended option first, label ends with "(Recommended)" / "(Препоръчано)".
+- Recommended option first, label ends with "(Recommended)" (translated into the user's language).
 - `multiSelect: true` when choices are genuinely combinable (channels, formats, assets).
 - "Other" is added automatically — do not add your own.
 - Use `preview` only to compare concrete artifacts (two headline variants, two layouts, two e-mail subject lines).
