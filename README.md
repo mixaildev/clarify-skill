@@ -48,23 +48,23 @@ The agent asks and writes in the user's language — ask in Bulgarian, get Bulga
 
 ```bash
 # Claude Code  →  ~/.claude/skills/clarify      (usage: /clarify <task>)
-curl -fsSL https://raw.githubusercontent.com/mihailvaleriev-prog/clarify-skill/main/get.sh | bash -s -- claude
+curl -fsSL https://raw.githubusercontent.com/mixaildev/clarify-skill/main/get.sh | bash -s -- claude
 
 # Codex        →  ~/.codex/skills/clarify       (usage: $clarify <task>)
-curl -fsSL https://raw.githubusercontent.com/mihailvaleriev-prog/clarify-skill/main/get.sh | bash -s -- codex
+curl -fsSL https://raw.githubusercontent.com/mixaildev/clarify-skill/main/get.sh | bash -s -- codex
 
 # Hermes — into the profile that runs the Telegram bot (profiles do NOT inherit root skills)
-curl -fsSL https://raw.githubusercontent.com/mihailvaleriev-prog/clarify-skill/main/get.sh | bash -s -- hermes <profile>
+curl -fsSL https://raw.githubusercontent.com/mixaildev/clarify-skill/main/get.sh | bash -s -- hermes <profile>
 # …or the root install: bash -s -- hermes
 
 # Everything at once (Claude + Codex + Hermes if ~/.hermes exists)
-curl -fsSL https://raw.githubusercontent.com/mihailvaleriev-prog/clarify-skill/main/get.sh | bash -s -- all
+curl -fsSL https://raw.githubusercontent.com/mixaildev/clarify-skill/main/get.sh | bash -s -- all
 ```
 
 Or manually:
 
 ```bash
-git clone https://github.com/mihailvaleriev-prog/clarify-skill.git
+git clone https://github.com/mixaildev/clarify-skill.git
 cd clarify-skill && ./install.sh hermes <profile>     # claude | codex | hermes [profile] | all
 ```
 

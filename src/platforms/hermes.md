@@ -2,7 +2,7 @@
 name: clarify
 description: Assess a task (marketing, ads, content, SEO, e-commerce, strategy or anything else) and interview the user with multiple-choice questions (Telegram buttons via the clarify tool) until it is unambiguous, then deliver a Markdown brief. Use for /clarify, "изясни задачата", "задай ми въпроси", "направи бриф", or any vague non-coding task that needs requirements before work starts.
 version: 1.0.0
-author: mihailvaleriev-prog
+author: mixaildev
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
